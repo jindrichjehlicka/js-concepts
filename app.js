@@ -44,3 +44,20 @@ class User {
 })()
 
 /*****************************************************/
+
+// Closures
+function Animal(name) {
+    const displayName = function (greeting) {
+        console.log(`${greeting} ${name}`)
+    }
+
+    return displayName;
+}
+
+const newAnimal = Animal('Jay');
+
+newAnimal('Hello')
+
+/*****************************************************/
+
+//Module pattern
